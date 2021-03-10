@@ -50,8 +50,6 @@ button{
     color: rgb(44, 40, 40);
     width: 100%;
     margin-left: 1em
-
-
 }
 svg{
     width: 1.5em;
@@ -83,18 +81,14 @@ h3{
     justify-content: space-between;
     align-items: center;
 }
-
 .tweet-box{
     border-top:  0.1px solid #eee;
     border-bottom:  0.1px solid #eee;
     padding-top: 1em;
     padding-bottom: 1em;
-    
-
 }
 .head-text{
     display: flex;
-
 }
 .wh{
     align-self: center;
@@ -116,8 +110,7 @@ h3{
 .tweet{
     margin: 1em 0;
     padding-left: 1em;
-    padding-right: 1em;
-    
+    padding-right: 1em; 
 }
 .handle{
     color: rgb(150, 150, 150);
@@ -125,14 +118,12 @@ h3{
 .username{
     align-items: center;
     padding-left: 1em;
-    
 }
 h4{
     padding-right: 0.3em
 }
 .align{
-    display: flex;
-    
+    display: flex;  
 }
 .name{
     font-weight: bolder;
@@ -147,7 +138,6 @@ h4{
     padding-right: 1em;
     text-align: left;
     width: 100%
-
 }
 .border-bottom{
     border-bottom: 1px solid #eee;
@@ -160,10 +150,7 @@ h4{
     padding-bottom: 1em;
     line-height: 1.5em;
     display: flex;
-    flex-direction: column;
-  
-
-    
+    flex-direction: column;  
 }
 .row{
     display: flex;
@@ -184,9 +171,7 @@ h4{
 }
 @media screen and (max-width: 1000px) {
     .side{
-        display: none;
-
-        
+        display: none;   
     }
     .nav{
         display: none;
@@ -197,7 +182,6 @@ h4{
     .tweet-top{
         display: none;
     }
-
   }
 
   @media screen and (max-width: 1002px) and (min-width: 1000px){
@@ -213,10 +197,8 @@ h4{
     .tweet-top{
         display: none;
     }
-
   }
   @media screen and (min-width: 1003px) and (max-width: 1264px){
- 
     .wrapper{
         grid-template-columns: 0.1fr 2fr 1.5fr;
     }
@@ -235,17 +217,12 @@ h4{
     .nav{
         margin: 1em 0;
     }
-    
-
   }
   @media screen and (min-width: 1265px){
- 
     .wrapper{
         grid-template-columns: 1fr 2fr 1.5fr;
     }
     .nav{
         margin-left: 2em ;
     }
-    
-
   }
