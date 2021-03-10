@@ -1,0 +1,251 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    grid-area: n;
+    margin-left: 3em;
+    margin-right: 3em;
+    
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1.8fr;
+    grid-template-areas: 
+    "n c s";
+}
+.content{
+    grid-area: c;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+
+}
+.side{
+    grid-area: s;
+    margin: 1em;
+    margin-right: 8em;
+
+}
+button{
+    background-color: #1DA1F2;
+    color: white;
+    width: 15em;
+    border: none;
+    padding: 1em;
+    border-radius: 2em;
+    font-weight: bolder;
+    font-size: 16px;
+}
+.nav > div{
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 1em;
+
+}
+.search{
+    border-radius: 2em;
+    background-color: #eee;
+    padding: 1em;
+    color: rgb(44, 40, 40);
+    width: 100%;
+    margin-left: 1em
+
+
+}
+svg{
+    width: 1.5em;
+    margin-right: 0.5em;
+}
+.profile-photo{
+    border-radius: 2em;
+    width: 4em;
+}
+.profile-photo-sm{
+    border-radius: 3em;
+    width: 3em;
+}
+h3{
+    padding-left: 1em;
+}
+.sm-button{
+    background-color: #1DA1F2;
+    color: white;
+    width: 6em;
+    border: none;
+    border-radius: 4em;
+    font-weight: bolder;
+    font-size: 14px;
+
+}
+.header-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tweet-box{
+    border-top:  0.1px solid #eee;
+    border-bottom:  0.1px solid #eee;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    
+
+}
+.head-text{
+    display: flex;
+
+}
+.wh{
+    align-self: center;
+    padding: 1em;
+    font-size: 18px;
+    color: rgb(150, 150, 150);
+}
+.post-icons{
+    margin-left: 5em;
+}
+.nav > div{
+    display: flex;
+    align-items: center;
+}
+.twitter{
+    width: 3em;
+    margin-left: 0.8em;
+}
+.tweet{
+    margin: 1em 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    
+}
+.handle{
+    color: rgb(150, 150, 150);
+}
+.username{
+    align-items: center;
+    padding-left: 1em;
+    
+}
+h4{
+    padding-right: 0.3em
+}
+.align{
+    display: flex;
+    
+}
+.name{
+    font-weight: bolder;
+}
+.trend{
+    display: flex;
+    flex-direction: column;
+    background: rgba(238, 238, 238, 0.26);
+    border-radius: 1em;
+    margin: 2em 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: left;
+    width: 100%
+
+}
+.border-bottom{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5em;
+    margin-left: -1em;
+}
+.trend-content{
+    border-bottom: 1px solid #eee;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+  
+
+    
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.sm{
+    font-size: 14px;
+}
+.show{
+    color:#1DA1F2;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.align2{
+    border-top: 1px solid #eee;
+    padding-top: 1em;
+
+}
+@media screen and (max-width: 1000px) {
+    .side{
+        display: none;
+
+        
+    }
+    .nav{
+        display: none;
+    }
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+    .tweet-top{
+        display: none;
+    }
+
+  }
+
+  @media screen and (max-width: 1002px) and (min-width: 1000px){
+    .nav{
+        display: none;
+    }
+    .wrapper{
+        grid-template-columns: 0fr 2fr 1.5fr;
+    }
+    .side{
+        margin-right: 5em;
+    }
+    .tweet-top{
+        display: none;
+    }
+
+  }
+  @media screen and (min-width: 1003px) and (max-width: 1264px){
+ 
+    .wrapper{
+        grid-template-columns: 0.1fr 2fr 1.5fr;
+    }
+    .side{
+        margin-right: 5em;
+    }
+    .tweet-top{
+        display: none;
+    }
+    .nav span{
+        display: none;
+    }
+    .nav button{
+        display: none;
+    }
+    .nav{
+        margin: 1em 0;
+    }
+    
+
+  }
+  @media screen and (min-width: 1265px){
+ 
+    .wrapper{
+        grid-template-columns: 1fr 2fr 1.5fr;
+    }
+    .nav{
+        margin-left: 2em ;
+    }
+    
+
+  }
